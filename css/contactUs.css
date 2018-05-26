@@ -1,0 +1,25 @@
+.main{
+	margin: 0px auto;
+	display: table;
+	margin-top: 130px;
+}
+.wrap{
+	margin: 50px;
+}
+.content{
+	background-color: transparent;
+}
+.oneContactBlock{
+	margin-bottom: 50px;
+}
+.oneContactBlock p{
+    color: #757575;
+    line-height: 2.1;
+    margin-bottom: 10px;
+}
+.oneContactBlock h1{
+    font-weight: normal;
+    font-size: 28px;
+    color: #333;
+    padding-bottom: 25px;
+}
