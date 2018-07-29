@@ -1,2 +1,4 @@
-# quanttide.github.io
+# Website of QuantTide Inc
+
+## Introduction
 Website of QuantTide Inc
