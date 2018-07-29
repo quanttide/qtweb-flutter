@@ -24,12 +24,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 18px;
-    color: #e73828;
+    color: #2a6086;
 }
 .news-date{
     float: right;
     font-size: 16px;
-    color: #ed7c75;
+    color: #4e8aae;
     text-align: right;
     padding: 0px;
 }
@@ -43,7 +43,6 @@
 	
 }
 .left-news{
-	border-right: 1px solid #e0e0e0;
 }
 .left-news h4{
 	margin: 0px 40px;
@@ -52,10 +51,17 @@
 	margin: 10px 0;
 }
 .title{
-	border-left: 5px #12a3d6 solid;
+	border-left: 5px #4e8aae solid;
 	padding: 0px 10px;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover{
-	background-color: #12a3d6;
-	border-color: #12a3d6;
+	background-color: #4e8aae;
+	border-color: #4e8aae;
+}
+.ourteam-grid1{
+	padding: 30px 60px;
+}
+.new-img{
+	width:100px;
+	height:100px;
 }

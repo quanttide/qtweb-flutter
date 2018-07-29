@@ -17,10 +17,12 @@ a:active, a:hover, a:link, a:visited {
     -webkit-transition: all .2s;
     transition: all .2s;
     display: inline;
+    margin-top: 90px;
 }
 .sub_sidebar.head_change {
 	position: fixed;
     top: 109px;
+    margin-top: 0px;
 }
 .sub_sidebar_list {
     position: relative;
@@ -59,14 +61,24 @@ a:active, a:hover, a:link, a:visited {
 .system_list {
     display: block;
     border-bottom: 1px solid #e4e0e0;
+    padding-top: 100px;
     margin-bottom: 50px;
+    padding-bottom: 15px;
 }
 .system_list .list_title {
     font-size: 20px;
     font-weight: 400;
-    color: #f98561;
+    color: #41789e;
     margin-bottom: 25px;
     font-weight: bold;
+}
+.title{
+	display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 3px;
+    padding: 5px;
 }
 .see-org {
     right: 5px;
@@ -109,4 +121,11 @@ a:active, a:hover, a:link, a:visited {
     line-height: 28px;
     font-size: 14px;
     text-align: justify;
+}
+.construction{
+	width: 100%;
+	text-align: center;
+	height: 500px;
+	vertical-align: middle;
+	padding: 150px;
 }
