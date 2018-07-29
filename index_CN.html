@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<title>公司简介</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='css/fontsgoogleapisUbuntu.css' rel='stylesheet' type='text/css'>
+		<link href='css/fontsgoogleapisBreeSerif.css' rel='stylesheet' type='text/css'>
+		<link href='css/fontsgoogleapisAnton.css' rel='stylesheet' type='text/css'>
+		<link href="css/new_file.css" rel="stylesheet" type="text/css">
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			$(function() {
+				$("#slider").responsiveSlides({
+					auto: true,
+					nav: true,
+					speed: 500,
+					namespace: "callbacks",
+					pager: true,
+				});
+			});
+		</script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<div class="header" id="home">
+			<div class="container" style="width: 1170px;">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo1.png" alt="" /></a>
+				</div>
+				<div class="top-menu">
+					<span class="menu"> </span>
+					<ul>
+						<li>
+							<a class="active" href="index_CN.html">公司简介<lable><img src="images/line.png"></lable>
+							</a>
+						</li>
+						<li>
+							<a href="business_CN.html">业务体系</a>
+						</li>
+
+						<li>
+							<a href="development_CN.html">成长历程</a>
+						</li>
+						<li>
+							<a href="team_CN.html">管理团队</a>
+						</li>
+						<li>
+							<a href="culture_CN.html">企业文化</a>
+						</li>						
+						<li>
+							<a href="news_CN.html">公司新闻</a>
+						</li>
+						
+						<li>
+							<a href="joinus_CN.html">加入我们</a>
+						</li>
+						
+					</ul>
+				</div>
+				<script>
+					$("span.menu").click(function() {
+						$(".top-menu ul").slideToggle("slow", function() {});
+					});
+				</script>
+				
+				<div class="clearfix"></div>
+			</div>
+			<script>
+				$(document).ready(function() {
+					$("span.menu").click(function() {
+						$(".top-nav ul").slideToggle(1000);
+					});
+				});
+			</script>
+			<div class="clearfix"></div>
+		</div>
+		<div class="header-slider" id="home">
+			<div class="slider" style="top: 95px;">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li>
+							<img src="images/image1.jpg" alt="">
+							<div class="caption">
+								<h3>量潮科技</h3>
+								<p>“量”寓意“定量”</p><p>“潮”寓意时代的潮流</p><p>我们取名“量潮科 技”，是因为</p><p>我们致力于成为定量分析时代潮流的引领者</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="content" style="position: relative;top: 95px;">
+			<div class="ourservice">
+				<div class="container">
+					<div class="ourservice-header">
+						<div class="ourservice-head">
+							<h3>主营业务</h3>
+						</div>
+					</div>
+					<div class="ourservice-grids">
+						<div class="col-md-4 ourservice-grid text-center">
+							<img src="images/img1.png" class="img-responsive" alt="" />
+							<a href="business_CN.html#assistant_training"><h3>职业培训</h3></a>
+							<p>职业培训业务主要面向有科研需求和求职意向的高校学生和行业新手等同龄人，提供以数据科学类编程培训班、大数据和人工智能类科普讲座为主的培训和讲座，帮助学员获得进入大数据领域的基础知识和技能。
+
+							</p>
+						</div>
+						<div class="col-md-4 ourservice-grid text-center">
+							<img src="images/img2.png" class="img-responsive" alt="" />
+							<a href="business_CN.html#data_consulting"><h3>咨询服务</h3></a>
+							<p>咨询服务业务主要面向高校科研和创业团队，提供科研课题及其技术方案设计、科研项目及大型助研项目组织、创业公司架构设计、创新创业项目和实践队项目组织等咨询服务，帮助客户理清科研和创业项目的执行思路。
+
+							</p>
+						</div>
+
+						<div class="col-md-4 ourservice-grid text-center">
+							<img src="images/img4.png" class="img-responsive" alt="" />
+							<a href="business_CN.html#data_product"><h3>数据产品</h3></a>
+							<p>数据产品业务主要面向高校研究者及科研团队、创业者及创业团队，提供数据采集与清洗、数据软件产品设计与开发、数据采集与分析系统解决方案等外包服务，帮助客户解决科研和创业项目中的技术问题。
+
+							</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="ourportfoilo">
+				<div class="container">
+					<div class="ourportfoilo-head" id="works">
+						<h3>企业文化</h3>
+						<hr/>
+						<div class="clearfix"></div>
+					</div>
+					<div class="our-work-section" id="portfolio">
+						<div id="portfoliolist">
+							<div class="portfolio port-head card mix_all  wow bounceIn" class="cbp-vm-image" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+								
+								<img src="images/b1.jpg" alt="" />
+								<a href="culture_CN.html#system_value"><h4>严谨</h4></a>
+							</div>
+
+							<div class="portfolio port-head app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+								
+								<img src="images/b2.jpg" alt="" />
+								<a href="culture_CN.html#system_value"><h4>开放</h4></a>
+							</div>
+							<div class="portfolio port-head icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+								
+								<img src="images/b3.jpg">
+								<a href="culture_CN.html#system_value"><h4>务实</h4></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						</div>
+						</div>
+					</div>
+						<div class="our-team">
+							<div class="container">
+								<a href="team_CN.html"><h3>创始人</h3></a>
+								<div class="ourteam-grids">
+									<div class="col-md-12">
+										<div class="ourteam-grid span1" style="border:1px solid #d3d3d3;">
+											<div class="ourteam-grid1" style="padding: 20px 60px;text-align: center;">
+												<div class="col-md-12" style="margin:0 auto">
+													<img src="images/iguo.png" style="width: 250px;height: 250px;border-radius: 50%;">
+												</div>
+												<div class="col-md-12">
+													<br>
+													<h4 style="font-size: 40px;color: #2190c1;font-family: fantasy;text-transform: uppercase;">张果</h3>
+								<h5 style="font-size: 30px;color: rgb(24, 22, 22);">创始人、董事长兼首席执行官</h4>
+
+													<!--<a href="#">jondoelorem@dild.com</a>-->
+													<!--<ul class="nav" style="width: 100%;">
+														<li>
+															<a class="color1" href="http://zhangguo.me/"></a>
+														</li>
+														<li>
+															<a class="color2" href="#"></a>
+														</li>
+														<li>
+															<a class="color3" href="#"></a>
+														</li>
+														<li>
+															<a class="color4" href="#"></a>
+														</li>
+
+													</ul>-->
+											</div>
+												<div class="clearfix"></div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="footer" style="position: relative;top: 95px;">
+						<div class="container">
+							<div class="col-md-4">
+								<h3>联系我们</h3>
+								<p>官方邮箱：we@xmucpp.com</p>
+								<p>数据服务：services@xmucpp.com</p>
+							</div>
+							<div class="col-md-4">
+								<h3>关注我们</h3>
+								<img src="images/WeChat qr code.jpg" class="qr" />
+							</div>
+							<div class="col-md-4">
+								<h3>更多链接</h3>
+								<img src="images/github.svg" />
+								<a href="https://github.com/xmucpp"><span>Github</span></a>
+								<hr/>
+								<img src="images/zhihu.svg" />
+								<a href="https://zhuanlan.zhihu.com/xmucpp"><span>知乎</span></a>
+							</div>
+							<div class="clearfix"></div>
+							<div class="footer-bottom">
+								<p>Copyright &copy; 2018.China's Price Project, All rights reserved.
+								</p>
+							</div>
+
+							<a class="scroll" href="#index" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+						</div>
+					</div>
+	</body>
+
+</html>
