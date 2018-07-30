@@ -64,3 +64,27 @@
 .oneJob p{
 	margin: 15px 0;
 }
+.fixednotice{
+	position: fixed;
+	right: 20px;
+	bottom: 0px;
+	border: #333333 1px solid;
+	border-radius: 10px;
+	width: 300px;
+	height:200px;
+	padding: 15px;
+	background: #FFFFFF;
+}
+.notice{
+	border-bottom: 1px solid #333333;
+	padding-bottom: 20px;
+}
+.mail{
+	margin: 5px 0;
+}
+
+.main ul li{display:list-item;list-style-type: disc;}
+.main>div>h2{margin: 15px 0;}
+.main>div>ul{margin: 15px 0 15px 35px;}
+.main>div>h3{margin: 15px 0;}
+.main>div>p{margin:15px 0;}

@@ -15,3 +15,50 @@
 .top-menu a:active{
 	
 }
+.footer h3{
+	color: #FFFFFF;
+	margin: 0 0 30px;
+}
+.footer p{
+	color: #FFFFFF;
+	margin: 15px 0;
+}
+.footer span{
+	color: #FFFFFF;
+	margin: 15px 0;
+	margin: 0 0 0 10px;
+}
+.footer img.qr{
+	width: 150px;
+	height: 150px;
+}
+.footer img{
+	width: 50px;
+	height: 50px;
+}
+.ourportfoilo-head{
+	text-align: center;
+}
+.port-head img{
+	width: 250px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+.port-head{
+	text-align: center;
+}
+.portfolio p{
+	font-size: 15px;
+}
+.post-content>h2{
+	margin: 15px 0px;
+}
+.post-content>p{
+	margin: 15px 0px;
+}
+.post-content>ul{
+	margin: 15px 0 15px 35px;
+}
+.post-content>h3{
+	margin: 15px 0px;
+}
