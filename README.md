@@ -1,4 +1,1 @@
-# Website of QuantTide Inc
-
-## Introduction
-Website of QuantTide Inc
+# 量潮企业官网
