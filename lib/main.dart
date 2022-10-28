@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-import './routes/business.dart' deferred as business;
-import './routes/culture.dart' deferred as culture;
+import './screens/business.dart' deferred as business;
+import './screens/culture.dart' deferred as culture;
 
 
 void main() async {
