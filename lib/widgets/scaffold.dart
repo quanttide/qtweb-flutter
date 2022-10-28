@@ -6,14 +6,31 @@
 
 import "package:flutter/material.dart";
 
+import 'navbar.dart';
+
 
 class ResponsiveScaffold extends StatelessWidget {
-  const ResponsiveScaffold({super.key});
+  final Widget? body;
+
+  const ResponsiveScaffold({
+    super.key,
+    this.body
+  });
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: const PreferredSize(
+        preferredSize: Size(70, 30),
+        child: HorizontalNavigationBar(
+          navItems: [
+            {'title': '业务简介', 'route': '/business'},
+            {'title': '企业文化', 'route': '/culture'},
+          ]
+        ),
+      ),
+      body: body,
+    );
   }
 
   Widget buildDesktop(BuildContext context) {

@@ -31,6 +31,8 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+  # 量潮设计语言
+  quanttide_design: 0.1.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

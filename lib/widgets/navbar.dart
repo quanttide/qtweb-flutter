@@ -8,12 +8,25 @@ import "package:flutter/material.dart";
 
 /// 电脑端
 class HorizontalNavigationBar extends StatelessWidget {
-  const HorizontalNavigationBar({super.key});
+  final List<Map<String, String>> navItems;
+
+  const HorizontalNavigationBar({
+    super.key,
+    required this.navItems,
+  });
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Row(
+      children: navItems.map(
+          (item) => InkWell(
+            child: Text(item['title']!),
+            onTap: (){
+              Navigator.pushNamed(context, item['route']!);
+            }
+          )
+      ).toList(),
+    );
   }
 }
 
