@@ -10,7 +10,7 @@ void main(){
     await tester.pumpWidget(const WidgetTestWrapper(
       widget: Material(
           child: HorizontalNavigationBar(
-            navItems: ['产品简介', '技术博客']
+            navItems: [{'title': '产品简介'}, {'title': '技术博客'}]
           ))
     ));
     final titleFinder = find.text('产品简介');
