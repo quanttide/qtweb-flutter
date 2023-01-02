@@ -4,8 +4,8 @@ import "package:flutter/material.dart";
 
 
 /// 企业文化页面
-class CultureRoute extends StatelessWidget {
-  const CultureRoute({Key? key}) : super(key: key);
+class CultureScreen extends StatelessWidget {
+  const CultureScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

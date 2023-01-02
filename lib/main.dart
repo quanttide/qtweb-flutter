@@ -33,8 +33,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => home.HomeScreen(),
-        '/business': (context) => business.BusinessRoute(),
-        '/culture': (context) => culture.CultureRoute(),
+        '/business': (context) => business.BusinessScreen(),
+        '/culture': (context) => culture.CultureScreen(),
       }
     );
   }

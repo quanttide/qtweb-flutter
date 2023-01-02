@@ -4,8 +4,8 @@ import "package:flutter/material.dart";
 
 
 /// 主营业务页面
-class BusinessRoute extends StatelessWidget {
-  const BusinessRoute({Key? key}) : super(key: key);
+class BusinessScreen extends StatelessWidget {
+  const BusinessScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

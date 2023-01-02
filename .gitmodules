@@ -1,0 +1,3 @@
+[submodule "assets/contents"]
+	path = assets/contents
+	url = https://e.coding.net/quanttide/qtweb/qtweb-contents.git
