@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
+import 'package:qtweb/router.dart';
 import "./screens/home.dart" deferred as home;
 import './screens/business.dart' deferred as business;
 import './screens/culture.dart' deferred as culture;
@@ -25,17 +26,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: '量潮科技',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => home.HomeScreen(),
-        '/business': (context) => business.BusinessScreen(),
-        '/culture': (context) => culture.CultureScreen(),
-      }
+      routerConfig: router,
     );
   }
 }

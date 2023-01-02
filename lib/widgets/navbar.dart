@@ -4,6 +4,7 @@
 ///   - https://pub.dev/packages/responsive_scaffold_nullsafe
 
 import "package:flutter/material.dart";
+import "package:go_router/go_router.dart";
 
 
 /// 电脑端
@@ -19,11 +20,14 @@ class HorizontalNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: navItems.map(
-          (item) => InkWell(
-            child: Text(item['title']!),
-            onTap: (){
-              Navigator.pushNamed(context, item['route']!);
-            }
+          (item) => Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            child: InkWell(
+                child: Text(item['title']!),
+                onTap: (){
+                  context.go(item['route']!);
+                }
+            )
           )
       ).toList(),
     );

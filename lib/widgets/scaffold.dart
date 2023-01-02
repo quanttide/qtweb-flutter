@@ -24,6 +24,7 @@ class ResponsiveScaffold extends StatelessWidget {
         preferredSize: Size(70, 30),
         child: HorizontalNavigationBar(
           navItems: [
+            {'title': '首页', 'route': '/'},
             {'title': '业务简介', 'route': '/business'},
             {'title': '企业文化', 'route': '/culture'},
           ]
