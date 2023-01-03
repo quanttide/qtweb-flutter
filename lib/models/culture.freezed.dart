@@ -14,6 +14,10 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
+CultureModel _$CultureModelFromJson(Map<String, dynamic> json) {
+  return _CultureModel.fromJson(json);
+}
+
 /// @nodoc
 mixin _$CultureModel {
   /// 标识。i.e. mission
@@ -31,6 +35,7 @@ mixin _$CultureModel {
   /// 要点
   List<CultureItemModel>? get items => throw _privateConstructorUsedError;
 
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $CultureModelCopyWith<CultureModel> get copyWith =>
       throw _privateConstructorUsedError;
@@ -153,7 +158,7 @@ class __$$_CultureModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
+@JsonSerializable()
 class _$_CultureModel implements _CultureModel {
   const _$_CultureModel(
       {required this.name,
@@ -162,6 +167,9 @@ class _$_CultureModel implements _CultureModel {
       this.description,
       final List<CultureItemModel>? items})
       : _items = items;
+
+  factory _$_CultureModel.fromJson(Map<String, dynamic> json) =>
+      _$$_CultureModelFromJson(json);
 
   /// 标识。i.e. mission
   @override
@@ -210,6 +218,7 @@ class _$_CultureModel implements _CultureModel {
             const DeepCollectionEquality().equals(other._items, _items));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name, title, slogan, description,
       const DeepCollectionEquality().hash(_items));
@@ -219,6 +228,13 @@ class _$_CultureModel implements _CultureModel {
   @pragma('vm:prefer-inline')
   _$$_CultureModelCopyWith<_$_CultureModel> get copyWith =>
       __$$_CultureModelCopyWithImpl<_$_CultureModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_CultureModelToJson(
+      this,
+    );
+  }
 }
 
 abstract class _CultureModel implements CultureModel {
@@ -228,6 +244,9 @@ abstract class _CultureModel implements CultureModel {
       required final String slogan,
       final String? description,
       final List<CultureItemModel>? items}) = _$_CultureModel;
+
+  factory _CultureModel.fromJson(Map<String, dynamic> json) =
+      _$_CultureModel.fromJson;
 
   @override
 
@@ -255,6 +274,10 @@ abstract class _CultureModel implements CultureModel {
       throw _privateConstructorUsedError;
 }
 
+CultureItemModel _$CultureItemModelFromJson(Map<String, dynamic> json) {
+  return _CultureItemModel.fromJson(json);
+}
+
 /// @nodoc
 mixin _$CultureItemModel {
   /// 标题
@@ -263,6 +286,7 @@ mixin _$CultureItemModel {
   /// 描述
   String? get description => throw _privateConstructorUsedError;
 
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $CultureItemModelCopyWith<CultureItemModel> get copyWith =>
       throw _privateConstructorUsedError;
@@ -345,9 +369,12 @@ class __$$_CultureItemModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
+@JsonSerializable()
 class _$_CultureItemModel implements _CultureItemModel {
   const _$_CultureItemModel({required this.title, this.description});
+
+  factory _$_CultureItemModel.fromJson(Map<String, dynamic> json) =>
+      _$$_CultureItemModelFromJson(json);
 
   /// 标题
   @override
@@ -372,6 +399,7 @@ class _$_CultureItemModel implements _CultureItemModel {
                 other.description == description));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, title, description);
 
@@ -380,12 +408,22 @@ class _$_CultureItemModel implements _CultureItemModel {
   @pragma('vm:prefer-inline')
   _$$_CultureItemModelCopyWith<_$_CultureItemModel> get copyWith =>
       __$$_CultureItemModelCopyWithImpl<_$_CultureItemModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_CultureItemModelToJson(
+      this,
+    );
+  }
 }
 
 abstract class _CultureItemModel implements CultureItemModel {
   const factory _CultureItemModel(
       {required final String title,
       final String? description}) = _$_CultureItemModel;
+
+  factory _CultureItemModel.fromJson(Map<String, dynamic> json) =
+      _$_CultureItemModel.fromJson;
 
   @override
 

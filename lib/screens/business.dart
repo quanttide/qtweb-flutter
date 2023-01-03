@@ -2,6 +2,9 @@
 
 import "package:flutter/material.dart";
 
+import '../models/business.dart';
+import '../utils/yml.dart';
+
 
 /// 主营业务页面
 class BusinessScreen extends StatelessWidget {
@@ -10,13 +13,33 @@ class BusinessScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: const <Widget>[
-          ListTile(
-            title: Text("量潮课堂"),
-            subtitle: Text("高校学生和职场新人的第二课堂。"),
-          ),
-        ]
+      body: FutureBuilder(
+        future: readYmlConfigFile('business'),
+        builder: (BuildContext context, AsyncSnapshot<List<Map<String, Object?>>> snapshot) {
+          if (snapshot.hasData){
+            List<CultureModel> businessModelList = snapshot.data!.map(
+                    (item) => CultureModel.fromJson(item)
+            ).toList();
+            return ListView(
+                children: businessModelList.map(
+                    (item) => Card(
+                      child: Column(
+                        children: [
+                          ListTile(
+                            title: Text(item.title),
+                            subtitle: Text(item.slogan ?? 'TODO: 增加业务Slogan'),
+                          ),
+                          Text(item.description ?? 'TODO: 增加业务简介'),
+                        ]
+                      )
+                    )
+                ).toList()
+            );
+          } else {
+            // TODO
+            return const Text('数据未加载');
+          }
+        },
       )
     );
   }

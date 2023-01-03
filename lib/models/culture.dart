@@ -3,6 +3,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'culture.freezed.dart';
+part 'culture.g.dart';
 
 
 /// 使命领域模型
@@ -20,6 +21,9 @@ class CultureModel with _$CultureModel {
     /// 要点
     List<CultureItemModel>? items,
   }) = _CultureModel;
+
+  factory CultureModel.fromJson(Map<String, Object?> json)
+    => _$CultureModelFromJson(json);
 }
 
 
@@ -31,4 +35,7 @@ class CultureItemModel with _$CultureItemModel {
     /// 描述
     String? description,
   }) = _CultureItemModel;
+
+  factory CultureItemModel.fromJson(Map<String, Object?> json)
+  => _$CultureItemModelFromJson(json);
 }

@@ -14,6 +14,10 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
+CultureModel _$BusinessModelFromJson(Map<String, dynamic> json) {
+  return _BusinessModel.fromJson(json);
+}
+
 /// @nodoc
 mixin _$BusinessModel {
   /// 标识。 i.e. wechat
@@ -35,22 +39,23 @@ mixin _$BusinessModel {
   /// 截至2020年3月，“微信和WeChat”的合并月活跃帐户数超过12亿。已成为连接各行业的开放平台，把人、内容、服务、智能设备连接起来。
   String? get description => throw _privateConstructorUsedError;
 
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $BusinessModelCopyWith<BusinessModel> get copyWith =>
+  $BusinessModelCopyWith<CultureModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $BusinessModelCopyWith<$Res> {
   factory $BusinessModelCopyWith(
-          BusinessModel value, $Res Function(BusinessModel) then) =
-      _$BusinessModelCopyWithImpl<$Res, BusinessModel>;
+          CultureModel value, $Res Function(CultureModel) then) =
+      _$BusinessModelCopyWithImpl<$Res, CultureModel>;
   @useResult
   $Res call({String name, String title, String? slogan, String? description});
 }
 
 /// @nodoc
-class _$BusinessModelCopyWithImpl<$Res, $Val extends BusinessModel>
+class _$BusinessModelCopyWithImpl<$Res, $Val extends CultureModel>
     implements $BusinessModelCopyWith<$Res> {
   _$BusinessModelCopyWithImpl(this._value, this._then);
 
@@ -137,10 +142,13 @@ class __$$_BusinessModelCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
+@JsonSerializable()
 class _$_BusinessModel implements _BusinessModel {
   const _$_BusinessModel(
       {required this.name, required this.title, this.slogan, this.description});
+
+  factory _$_BusinessModel.fromJson(Map<String, dynamic> json) =>
+      _$$_BusinessModelFromJson(json);
 
   /// 标识。 i.e. wechat
   @override
@@ -182,6 +190,7 @@ class _$_BusinessModel implements _BusinessModel {
                 other.description == description));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, name, title, slogan, description);
@@ -191,14 +200,24 @@ class _$_BusinessModel implements _BusinessModel {
   @pragma('vm:prefer-inline')
   _$$_BusinessModelCopyWith<_$_BusinessModel> get copyWith =>
       __$$_BusinessModelCopyWithImpl<_$_BusinessModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_BusinessModelToJson(
+      this,
+    );
+  }
 }
 
-abstract class _BusinessModel implements BusinessModel {
+abstract class _BusinessModel implements CultureModel {
   const factory _BusinessModel(
       {required final String name,
       required final String title,
       final String? slogan,
       final String? description}) = _$_BusinessModel;
+
+  factory _BusinessModel.fromJson(Map<String, dynamic> json) =
+      _$_BusinessModel.fromJson;
 
   @override
 

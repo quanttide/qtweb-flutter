@@ -2,8 +2,6 @@
 
 import "package:flutter/material.dart";
 
-import '../widgets/scaffold.dart';
-
 
 /// 首页
 class HomeScreen extends StatelessWidget {
@@ -11,6 +9,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('官网首页');
+    return const Center(
+        child: Text('引领定量分析时代潮流')
+    );
   }
 }

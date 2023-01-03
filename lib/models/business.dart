@@ -6,13 +6,16 @@
 
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import 'package:qtweb/utils/yml.dart';
+
 part 'business.freezed.dart';
+part 'business.g.dart';
 
 
 /// 主营业务领域模型
 @freezed
-class BusinessModel with _$BusinessModel {
-  const factory BusinessModel({
+class CultureModel with _$BusinessModel {
+  const factory CultureModel({
     /// 标识。 i.e. wechat
     required String name,
     /// 标题。i.e. 微信
@@ -29,4 +32,7 @@ class BusinessModel with _$BusinessModel {
     /// 截至2020年3月，“微信和WeChat”的合并月活跃帐户数超过12亿。已成为连接各行业的开放平台，把人、内容、服务、智能设备连接起来。
     String? description,
   }) = _BusinessModel;
+
+  factory CultureModel.fromJson(Map<String, Object?> json)
+  => _$BusinessModelFromJson(json);
 }
