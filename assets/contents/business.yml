@@ -1,0 +1,16 @@
+# 主营业务
+#
+# Ref:
+#   - https://www.tencent.com/zh-cn/business.html
+qtclass:
+  title: 量潮课堂
+  slogan: 高校学生和职场新人的第二课堂
+  description: TODO
+qtservices:
+  title: 量潮数据服务
+  slogan: TODO
+  description: TODO
+qtcloud:
+  title: 量潮云
+qtopen:
+  title: 量潮开源

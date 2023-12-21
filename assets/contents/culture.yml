@@ -1,0 +1,57 @@
+# 企业文化
+#
+# Ref:
+#   - https://www.mi.com/about/culture
+#   - https://www.alibabagroup.com/about-alibaba#culture-and-values
+#   - https://www.tencent.com/zh-cn/about.html#about-con-6
+#   - https://www.microsoft.com/en-us/about/corporate-values
+#   - https://www.jetbrains.com/company/
+
+# 使命
+mission:
+  title: 使命
+  # 标语。i.e. 让天下没有难做的生意。
+  slogan: 引领定量分析时代潮流
+  description: TODO
+  src: articles/culture/mission.md
+
+# 愿景
+vision:
+  title: 愿景
+  # 标语。i.e. 让追求成为一家活102年的好公司。
+  slogan: TODO
+  # 描述。i.e. 让追求成为一家活102年的好公司。我们的愿景是让客户相会、工作和生活在阿里巴巴。到2036财年，服务全世界20亿消费者，帮助1000万中小企业盈利以及创造1亿就业机会。
+  description: TODO
+  src: articles/culture/vision.md
+
+# 价值观
+values:
+  title: 价值观
+  slogan: 科学家文化
+  description: TODO
+  src: articles/culture/values.md
+  items:
+    # 标题。i.e. 正直
+    - title: 严谨
+      # 描述。i.e. 坚守底线，以德为先，坦诚公正不唯上
+      description: TODO
+    # - title: 客观
+    - title: 互助
+      description: TODO
+    - title: 诚实
+    - title: 自省
+
+# 方法论
+methods:
+  title: 方法论
+  slogan: 专家主导决策
+  description: 谁懂听谁的。
+  src: articles/culture/methods.md
+  items:
+    - title: 见微知著
+      description: 关注小而具体的问题，从典型案例发现普遍规律。
+      article:
+    - title: 厚积薄发
+      description: TODO
+      article:
+
